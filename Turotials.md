@@ -3,3 +3,6 @@ https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-
 
 ## SSH configuration
 https://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/
+
+## Manage gcc/g++ version
+https://linuxconfig.org/how-to-switch-between-multiple-gcc-and-g-compiler-versions-on-ubuntu-20-04-lts-focal-fossa
