@@ -6,3 +6,6 @@ https://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity
 
 ## Manage gcc/g++ version
 https://linuxconfig.org/how-to-switch-between-multiple-gcc-and-g-compiler-versions-on-ubuntu-20-04-lts-focal-fossa
+
+## ImageNet validation labels
+https://github.com/microsoft/Swin-Transformer/issues/195
