@@ -12,3 +12,6 @@ https://github.com/microsoft/Swin-Transformer/issues/195
 
 ## libstdc++.so.6: version `GLIBCXX_3.4.30' not found
 https://stackoverflow.com/questions/72540359/glibcxx-3-4-30-not-found-for-librosa-in-conda-virtual-environment-after-tryin
+
+## Docker access from vscode
+https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
