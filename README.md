@@ -15,3 +15,7 @@ https://stackoverflow.com/questions/72540359/glibcxx-3-4-30-not-found-for-libros
 
 ## Docker access from vscode
 https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
+
+## error while loading shared libraries: libssl.so.1.0.0
+wget "http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb"
+sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb
