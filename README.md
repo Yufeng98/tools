@@ -19,3 +19,8 @@ https://stackoverflow.com/questions/52364905/after-executing-following-code-of-d
 ## error while loading shared libraries: libssl.so.1.0.0
 wget "http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb"
 sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb
+
+## RDT Allocation error
+Write RDT_IFACE=MSR in /etc/environment
+sudo modprobe msr
+sudo rm /var/lock/libpqos
