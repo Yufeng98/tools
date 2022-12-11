@@ -24,3 +24,6 @@ sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb
 Write RDT_IFACE=MSR in /etc/environment
 sudo modprobe msr
 sudo rm /var/lock/libpqos
+
+## folk repo privately
+https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public-repository-private
