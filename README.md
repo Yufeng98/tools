@@ -27,3 +27,7 @@ sudo rm /var/lock/libpqos
 
 ## folk repo privately
 https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public-repository-private
+
+## Matplotlib linestyle and color cheatsheet
+https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
+https://matplotlib.org/stable/gallery/color/named_colors.html
