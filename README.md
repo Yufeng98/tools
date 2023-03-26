@@ -17,13 +17,17 @@ https://stackoverflow.com/questions/72540359/glibcxx-3-4-30-not-found-for-libros
 https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
 
 ## error while loading shared libraries: libssl.so.1.0.0
+```bash
 wget "http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb"
 sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu5.10_amd64.deb
+```
 
 ## RDT Allocation error
 Write RDT_IFACE=MSR in /etc/environment
+```bash
 sudo modprobe msr
 sudo rm /var/lock/libpqos
+```
 
 ## folk repo privately
 https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public-repository-private
@@ -33,6 +37,8 @@ https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
 https://matplotlib.org/stable/gallery/color/named_colors.html
 
 ## Kill specific commands
+```bash
 ps aux > pid_list
 python3 pid_filter.py pid_list <command> > tmp
 cat tmp | sudo kill `xargs`
+```
