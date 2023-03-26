@@ -31,3 +31,8 @@ https://stackoverflow.com/questions/10065526/github-how-to-make-a-fork-of-public
 ## Matplotlib linestyle and color cheatsheet
 https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
 https://matplotlib.org/stable/gallery/color/named_colors.html
+
+## Kill specific commands
+ps aux > pid_list
+python3 pid_filter.py pid_list <command> > tmp
+cat tmp | sudo kill `xargs`
