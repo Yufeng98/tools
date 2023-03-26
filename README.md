@@ -38,5 +38,5 @@ https://matplotlib.org/stable/gallery/color/named_colors.html
 
 ## Kill specific commands
 ```bash
-ps aux | grep <command> | awk '{print $2}' | sudo kill `xargs`
+ps aux | grep <command> | grep -v "grep" | awk '{print $2}' | xargs kill
 ```
