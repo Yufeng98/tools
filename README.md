@@ -38,7 +38,5 @@ https://matplotlib.org/stable/gallery/color/named_colors.html
 
 ## Kill specific commands
 ```bash
-ps aux > pid_list
-python3 pid_filter.py pid_list <command> > tmp
-cat tmp | sudo kill `xargs`
+ps aux | grep <command> | awk '{print $2}' | sudo kill `xargs`
 ```
