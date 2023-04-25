@@ -43,7 +43,8 @@ ps aux | grep <command> | grep -v "grep" | awk '{print $2}' | xargs kill
 
 ## Install Zerotier on Linux
 ```bash
-sudo apt install make clang cargo pkg-config
+sudo apt install make clang cargo pkg-config libssl-dev
 git clone https://github.com/zerotier/ZeroTierOne.git
 cd ZeroTierOne && make -j
+sudo service zerotier-one restart
 ```
