@@ -41,6 +41,9 @@ https://matplotlib.org/stable/gallery/color/named_colors.html
 ps aux | grep <command> | grep -v "grep" | awk '{print $2}' | xargs kill
 ```
 
-## Fix ip address from the DHCP of a private network
-https://www.freecodecamp.org/news/setting-a-static-ip-in-ubuntu-linux-ip-address-tutorial/
-install NetworkMagenger package first and ignore gateway4 line
+## Install Zerotier on Linux
+```bash
+sudo apt install make clang cargo pkg-config
+git clone https://github.com/zerotier/ZeroTierOne.git
+cd ZeroTierOne && make -j
+```
