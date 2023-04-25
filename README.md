@@ -41,10 +41,11 @@ https://matplotlib.org/stable/gallery/color/named_colors.html
 ps aux | grep <command> | grep -v "grep" | awk '{print $2}' | xargs kill
 ```
 
-## Install Zerotier on Linux
+## Zerotier
 ```bash
-sudo apt install make clang cargo pkg-config libssl-dev
-git clone https://github.com/zerotier/ZeroTierOne.git
-cd ZeroTierOne && make -j
-sudo service zerotier-one restart
+# Install Zerotier on Linux
+curl -s https://install.zerotier.com/ | sudo bash
+sudo service zerotier-one start
 ```
+restart Zerotier
+https://zerotier.atlassian.net/wiki/spaces/SD/pages/327693/How+to+Clear+Reset+your+ZeroTier+Address
