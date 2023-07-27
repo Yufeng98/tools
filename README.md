@@ -49,3 +49,8 @@ sudo service zerotier-one start
 ```
 restart Zerotier
 https://zerotier.atlassian.net/wiki/spaces/SD/pages/327693/How+to+Clear+Reset+your+ZeroTier+Address
+
+## MacOS Clang cannot link libc++
+```
+export LDFLAGS=-L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+```
