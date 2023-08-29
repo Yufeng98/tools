@@ -12,6 +12,11 @@ https://github.com/microsoft/Swin-Transformer/issues/195
 
 ## libstdc++.so.6: version `GLIBCXX_3.4.30' not found
 https://stackoverflow.com/questions/72540359/glibcxx-3-4-30-not-found-for-librosa-in-conda-virtual-environment-after-tryin
+```bash
+cd /home/ubuntu/anaconda3/envs/tensorflow_p36/lib
+mv libstdc++.so.6 libstdc++.so.6.old
+ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 libstdc++.so.6
+```
 
 ## Docker access from vscode
 https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
