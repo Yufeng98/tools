@@ -1,6 +1,11 @@
 ## Move docker volume to another disk
 https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/
 
+## Docker commands
+```
+docker build prune    # remove docker build cache
+```
+
 ## SSH configuration
 https://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/
 
@@ -59,3 +64,4 @@ https://zerotier.atlassian.net/wiki/spaces/SD/pages/327693/How+to+Clear+Reset+yo
 ```
 export LDFLAGS=-L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
 ```
+
