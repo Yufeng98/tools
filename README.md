@@ -65,3 +65,12 @@ https://zerotier.atlassian.net/wiki/spaces/SD/pages/327693/How+to+Clear+Reset+yo
 export LDFLAGS=-L/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
 ```
 
+## Linux commands
+```
+sudo useradd bob
+sudo passwd username
+sudo mkhomedir_helper bob
+usermod -aG sudo bob
+chown tom:tom /home/tom
+chmod 755 /home/tom
+```
