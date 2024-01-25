@@ -74,3 +74,6 @@ usermod -aG sudo bob
 chown tom:tom /home/tom
 chmod 755 /home/tom
 ```
+
+## VNC configuration
+https://www.tecmint.com/install-and-configure-vnc-server-in-centos-7/
