@@ -77,3 +77,12 @@ chmod 755 /home/tom
 
 ## VNC configuration
 https://www.tecmint.com/install-and-configure-vnc-server-in-centos-7/
+
+## HP ML350p Gen8 mount new disk
+F8 to configure RAID of new disk
+https://unix.stackexchange.com/questions/315063/mount-wrong-fs-type-bad-option-bad-superblock/315070#315070
+```bash
+sudo mkfs.ext4 /dev/sdX
+sudo mkdir /data#
+sudo mount /dev/sdX /data#
+```
