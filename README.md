@@ -86,3 +86,18 @@ sudo mkfs.ext4 /dev/sdX
 sudo mkdir /data#
 sudo mount /dev/sdX /data#
 ```
+
+## Install gcc-12 on RHEL 8
+```bash
+git clone https://gcc.gnu.org/git/gcc.git gcc-source
+cd gcc-source/
+git branch -a
+git checkout remotes/origin/releases/gcc-12
+
+mkdir ../gcc-12-build
+cd ../gcc-12-build/
+sudo yum install  gmp  gmp-devel  mpfr  mpfr-devel  libmpc  libmpc-devel
+./../gcc-source/configure --prefix=<HOME>/install/gcc-12 --enable-languages=c,c++
+make -j
+make install
+```
