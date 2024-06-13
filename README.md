@@ -22,6 +22,7 @@ cd /home/ubuntu/anaconda3/envs/tensorflow_p36/lib
 mv libstdc++.so.6 libstdc++.so.6.old
 ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 libstdc++.so.6
 ```
+another solution: conda install -c conda-forge gcc=12.1.0
 
 ## Docker access from vscode
 https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
