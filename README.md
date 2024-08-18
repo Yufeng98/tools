@@ -102,3 +102,12 @@ sudo yum install  gmp  gmp-devel  mpfr  mpfr-devel  libmpc  libmpc-devel
 make -j
 make install
 ```
+
+## Git submodule
+https://graphite.dev/guides/git-submodules
+```bash
+git submodule add <https://github.com/example/lib.git> external/lib
+git clone --recurse-submodules <https://github.com/example/project.git>
+git submodule update --init --recursive
+git add external/lib   # "Update submodule to latest version"
+```
