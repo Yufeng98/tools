@@ -111,3 +111,29 @@ git clone --recurse-submodules <https://github.com/example/project.git>
 git submodule update --init --recursive
 git add external/lib   # "Update submodule to latest version"
 ```
+
+## vLLM inference on H100 
+1. NCCL error on DGX-H100 using >2 GPUs, using NCCL_DEBUG=INFO to find the following failure.
+```bash
+lh1801:1589687:1589687 [0] transport/nvls.cc:158 NCCL WARN Cuda failure 1 'invalid argument'
+lh1801:1589687:1589687 [0] NCCL INFO transport/nvls.cc:330 -> 1
+lh1801:1589687:1589687 [0] NCCL INFO init.cc:1277 -> 1
+lh1801:1589687:1589687 [0] NCCL INFO init.cc:1548 -> 1
+lh1801:1589687:1589687 [0] NCCL INFO init.cc:1799 -> 1
+lh1801:1589687:1589687 [0] NCCL INFO init.cc:1837 -> 1
+```
+https://github.com/NVIDIA/nccl-tests/issues/183
+Restart fabric manager or set `NCCL_NVLS_ENABLE=0`
+
+2. vLLM error of P2P test
+```bash
+[rank0]: RuntimeError: Error happened when batch testing peer-to-peer access from (...)
+```
+https://github.com/vllm-project/vllm/issues/8257
+set VLLM_SKIP_P2P_CHECK=1
+
+3. Stuck when initilializing multi-GPUs
+```bash
+os.environ['MASTER_ADDR'] = 'localhost'
+os.environ['MASTER_PORT'] = '12355' 
+```
