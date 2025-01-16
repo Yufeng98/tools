@@ -137,3 +137,6 @@ set VLLM_SKIP_P2P_CHECK=1
 os.environ['MASTER_ADDR'] = 'localhost'
 os.environ['MASTER_PORT'] = '12355' 
 ```
+
+## List all available modules
+`module avail`
