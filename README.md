@@ -1,11 +1,14 @@
-## Move docker volume to another disk
+## Docker
+Move docker volume to another disk
 https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/
+Access Jupyter notebook running on Docker container
+https://stackoverflow.com/questions/38830610/access-jupyter-notebook-running-on-docker-container
+Docker access from vscode
+https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
 
-## Docker commands
 ```
 docker build prune    # remove docker build cache
 ```
-
 ## SSH configuration
 https://www.cyberciti.biz/faq/force-ssh-client-to-use-given-private-key-identity-file/
 
@@ -23,9 +26,6 @@ mv libstdc++.so.6 libstdc++.so.6.old
 ln -s /usr/lib/x86_64-linux-gnu/libstdc++.so.6 libstdc++.so.6
 ```
 another solution: conda install -c conda-forge gcc=12.1.0
-
-## Docker access from vscode
-https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
 
 ## error while loading shared libraries: libssl.so.1.0.0
 ```bash
