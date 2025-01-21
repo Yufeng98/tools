@@ -1,11 +1,12 @@
 ## Docker
 Move docker volume to another disk
 https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/
+
 Access Jupyter notebook running on Docker container
 https://stackoverflow.com/questions/38830610/access-jupyter-notebook-running-on-docker-container
+
 Docker access from vscode
 https://stackoverflow.com/questions/52364905/after-executing-following-code-of-dockerode-npm-getting-error-connect-eacces-v
-
 ```
 docker build prune    # remove docker build cache
 ```
