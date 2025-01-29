@@ -1,4 +1,10 @@
 ## Docker
+Install Docker 
+https://docs.docker.com/engine/install/
+
+Manage Docker as a non-root user
+https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user
+
 Move docker volume to another disk
 https://www.guguweb.com/2019/02/07/how-to-move-docker-data-directory-to-another-location-on-ubuntu/
 
